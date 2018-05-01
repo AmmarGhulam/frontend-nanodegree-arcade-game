@@ -44,10 +44,6 @@ Player.prototype.update = function (){
 }
 Player.prototype.render= function(){
  ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
- if (player.y <50) {
-        player.x = 200;
-        player.y = 380; 
-    }
 }
     
 Player.prototype.handleInput = function(keyCode) {
