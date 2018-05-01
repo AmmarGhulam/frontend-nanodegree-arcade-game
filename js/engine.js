@@ -79,9 +79,16 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+         checkCollisions();
     }
-
+    function checkCollisions(){
+        allEnemies.forEach (function(element) {//if the player hit the enemies
+     if ((player.y == element.y)&&element.x + 60 > player.x && element.x - 60 < player.x){
+        player.x = 200;
+        player.y = 380; 
+        }
+    });
+    }
     /* This is called by the update function and loops through all of the
      * objects within your allEnemies array as defined in app.js and calls
      * their update() methods. It will then call the update function for your
@@ -162,6 +169,7 @@ var Engine = (function(global) {
      */
     function reset() {
         // noop
+      
     }
 
     /* Go ahead and load all of the images we know we're going to need to
