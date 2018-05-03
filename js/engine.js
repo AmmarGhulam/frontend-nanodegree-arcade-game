@@ -12,7 +12,8 @@
  * This engine makes the canvas' context (ctx) object globally available to make 
  * writing app.js a little simpler to work with.
  */
-
+var score=0;
+var dies= 0;
 var Engine = (function(global) {
     /* Predefine the variables we'll be using within this scope,
      * create the canvas element, grab the 2D context for that canvas
@@ -85,11 +86,16 @@ var Engine = (function(global) {
         if (player.y <50) {
             player.x = 200;
             player.y = 380; 
+            score++;
+            swal("wooohoo you reach the water safe!", "your score now "+score+" with "+dies+" .lets raise the bar up");
+            maxSpeed = maxSpeed + 100;
+            minSpeed = minSpeed +50;
         }
         allEnemies.forEach (function(element) {//if the player hit the enemies
             if ((player.y == element.y)&&element.x + 60 > player.x && element.x - 60 < player.x){
                 player.x = 200;
                 player.y = 380; 
+                dies++;
             }
         });
     }

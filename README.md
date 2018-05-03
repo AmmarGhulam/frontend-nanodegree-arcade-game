@@ -5,6 +5,8 @@ Students should use this [rubric](https://review.udacity.com/#!/projects/2696458
 
 For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
 
+# how to play
+use this link (https://github.com/AmmarGhulam/frontend-nanodegree-arcade-game.git) to download or clone repositorie then run index.html . 
 
 ## Explanation of project structure:
 - `index.html` is pretty much empty! 
@@ -22,3 +24,4 @@ Because I am late in the project I make it meet the specifications so do not exp
 -http://www.jdstraughan.com/2013/03/05/html5-snake-with-source-code-walkthrough/
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 -https://www.w3schools.com/js/js_object_prototypes.asp
+-https://sweetalert.js.org/guides/

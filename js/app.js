@@ -1,13 +1,13 @@
+'use strict';
 var maxSpeed = 500;
 var minSpeed = 200;
 // Enemies our player must avoid
-var Enemy = function(y) {
+function Enemy (y) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     this.x = -100;
     this.y = y;
-     this.speed = Math.floor(Math.random() * maxSpeed + minSpeed);
-     //random()* 100 +300 to make sure it is fast
+    this.speed = Math.floor(Math.random() * maxSpeed + minSpeed);
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
@@ -34,7 +34,7 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var Player = function() {
+function Player() {
     this.x = 200;
     this.y= 380;
     this.sprite = 'images/char-boy.png';
